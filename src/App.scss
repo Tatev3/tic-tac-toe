@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+
+  &-header {
+    background-color: #07183c;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+}
+
+.board {
+  background-color: #fff;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  grid-gap: 10px;
+  height: 380px;
+  padding: 10px;
+  width: 380px;
+}
+
+.btn-reset {
+  background-color: #4eaed4;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: aliceblue;
+  font-size: 1.3em;
+  font-weight: bold;
+  height: 50px;
+  margin-top: 5px;
+  width: 200px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.cell {
+  background-color: #282c34;
+  font-size: 2.2em;
+  height: 120px;
+  width: 120px;
+
+  div {
+    margin-top: 20px;
+  }
+
+  &.active {
+    cursor: pointer;
+  }
+
+  &.disabled {
+    background-color: rgb(125, 125, 125);
+  }
+
+  &.winner {
+    background-color: rgb(177, 238, 175);
+    color: rgb(171, 24, 24);
+  }
+}
+
+.header {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+
+  div span {
+    color: rgb(177, 238, 175);
+  }
+}
